@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speakers – E-Summit ’26 | IIT Tirupati</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#A855F7",
+                        secondary: "#22d3ee",
+                        accent: "#e879f9",
+                        lavender: "#d8b4fe",
+                        black: "#000000",
+                        "surface-dark": "#0A0A0A",
+                        "surface-card": "#18181b",
+                    },
+                    fontFamily: {
+                        display: ["Orbitron", "sans-serif"],
+                        body: ["Montserrat", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'hero-gradient':
+                            'radial-gradient(circle at center, rgba(168,85,247,0.15) 0%, rgba(0,0,0,0) 70%)',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4,0,0.6,1) infinite',
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        .bg-grid {
+            background-size: 50px 50px;
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+    </style>
+</head>
+
+<body class="bg-black text-gray-200 font-body">
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Hero -->
+    <header class="relative pt-32 pb-20 overflow-hidden">
+        <div class="absolute inset-0 bg-grid opacity-30 pointer-events-none"></div>
+        <div class="absolute inset-0 bg-hero-gradient pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-sm md:text-base font-display font-bold tracking-[0.3em] text-primary uppercase mb-4">
+                Meet the Visionaries
+            </h2>
+            <h1 class="text-5xl md:text-7xl font-display font-black text-white mb-6">
+                SPEAKERS <span class="text-lavender">'26</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-gray-400 text-lg">
+                Industry leaders, founders, and innovators shaping the future.
+            </p>
+            <div class="h-1 w-32 bg-gradient-to-r from-primary via-accent to-secondary mx-auto mt-8 rounded-full"></div>
+        </div>
+    </header>
+
+    <!-- Spotlight Speakers -->
+    <section class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-12 text-center">
+                Spotlight Speakers
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card -->
+                <div
+                    class="bg-surface-card border border-gray-800 rounded-2xl p-6 hover:border-primary/50 transition-all">
+                    <div
+                        class="h-56 rounded-xl bg-black/40 border border-dashed border-primary/40 flex items-center justify-center mb-6">
+                        <span class="text-primary font-display tracking-widest text-sm uppercase">
+                            Revealing Soon
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-white mb-1">Speaker Name</h3>
+                    <p class="text-gray-500 text-sm">Designation · Organization</p>
+                </div>
+
+                <!-- Duplicate 3 more -->
+                <div
+                    class="bg-surface-card border border-gray-800 rounded-2xl p-6 hover:border-primary/50 transition-all">
+                    <div
+                        class="h-56 rounded-xl bg-black/40 border border-dashed border-primary/40 flex items-center justify-center mb-6">
+                        <span class="text-primary font-display tracking-widest text-sm uppercase">
+                            Revealing Soon
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-white mb-1">Speaker Name</h3>
+                    <p class="text-gray-500 text-sm">Designation · Organization</p>
+                </div>
+
+                <div
+                    class="bg-surface-card border border-gray-800 rounded-2xl p-6 hover:border-primary/50 transition-all">
+                    <div
+                        class="h-56 rounded-xl bg-black/40 border border-dashed border-primary/40 flex items-center justify-center mb-6">
+                        <span class="text-primary font-display tracking-widest text-sm uppercase">
+                            Revealing Soon
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-white mb-1">Speaker Name</h3>
+                    <p class="text-gray-500 text-sm">Designation · Organization</p>
+                </div>
+
+                <div
+                    class="bg-surface-card border border-gray-800 rounded-2xl p-6 hover:border-primary/50 transition-all">
+                    <div
+                        class="h-56 rounded-xl bg-black/40 border border-dashed border-primary/40 flex items-center justify-center mb-6">
+                        <span class="text-primary font-display tracking-widest text-sm uppercase">
+                            Revealing Soon
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-display font-bold text-white mb-1">Speaker Name</h3>
+                    <p class="text-gray-500 text-sm">Designation · Organization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keynote Speakers -->
+    <section class="py-20 bg-black border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-12 text-center">
+                Keynote Speakers
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div
+                    class="bg-surface-card border border-gray-800 rounded-3xl p-8 hover:border-secondary/50 transition-all">
+                    <div
+                        class="h-72 rounded-2xl bg-black/40 border border-dashed border-secondary/40 flex items-center justify-center mb-8">
+                        <span class="text-secondary font-display tracking-widest text-sm uppercase">
+                            Announcement Coming Soon
+                        </span>
+                    </div>
+                    <h3 class="text-2xl font-display font-bold text-white mb-2">Keynote Speaker</h3>
+                    <p class="text-gray-500">Title · Organization</p>
+                </div>
+
+                <div
+                    class="bg-surface-card border border-gray-800 rounded-3xl p-8 hover:border-secondary/50 transition-all">
+                    <div
+                        class="h-72 rounded-2xl bg-black/40 border border-dashed border-secondary/40 flex items-center justify-center mb-8">
+                        <span class="text-secondary font-display tracking-widest text-sm uppercase">
+                            Announcement Coming Soon
+                        </span>
+                    </div>
+                    <h3 class="text-2xl font-display font-bold text-white mb-2">Keynote Speaker</h3>
+                    <p class="text-gray-500">Title · Organization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navbar Loader -->
+    <script>
+        function setActiveNavLink() {
+            const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+            document.querySelectorAll(".nav-link, .mobile-link").forEach(link => {
+                const linkPage = link.getAttribute("href");
+
+                if (linkPage === currentPage) {
+                    link.classList.add("active");
+                }
+            });
+        }
+
+        // Run after navbar is injected
+        fetch("components/navbar.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("navbar").innerHTML = html;
+                setActiveNavLink();
+            });
+    </script>
+
+    <script src="js/navbar.js"></script>
+</body>
+</html>
